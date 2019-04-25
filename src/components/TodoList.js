@@ -17,6 +17,7 @@ export class TodoList extends React.Component {
         const items = this.props.myTask.map((elem, i) => {
             let task_id = 'task_' + i;
             return (
+
                 <li key={i} id={task_id} className={elem.status}>
                     <span className="id">{i + 1}</span>
                     <span className="title">{elem.text}</span>
